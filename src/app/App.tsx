@@ -15,8 +15,6 @@ import PageMe from "./pages/PageMe.tsx";
 import Page from "./pages/Page.tsx";
 import PageCompanies from "./pages/PageCompanies.tsx";
 import PageAdmins from "./pages/PageAdmins.tsx";
-import PageOwners from "./pages/PageOwners.tsx";
-import PageConfig from "./pages/PageConfig.tsx";
 
 export interface RoutePageInterface {
     path: string;
@@ -28,8 +26,6 @@ export const routePages: RoutePageInterface[] = [
     {path: '/companies', element: <Page element={<PageCompanies/>}/>, title: "Companies"},
     {path: '/users', element: <Page element={<PageUsers/>}/>, title: "Users"},
     {path: '/admins', element: <Page element={<PageAdmins/>}/>, title: "Admins"},
-    {path: '/owners', element: <Page element={<PageOwners/>}/>, title: "Owners"},
-    {path: '/config', element: <Page element={<PageConfig/>}/>, title: "Config"},
     {path: '/me', element: <Page element={<PageMe/>}/>, title: "Me"},
 ];
 

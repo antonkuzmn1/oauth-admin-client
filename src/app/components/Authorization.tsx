@@ -7,7 +7,7 @@ import {setAccountAuthorized} from "../../slices/accountSlice.ts";
 import {api} from "../../utils/api.ts";
 
 const loginUser = async (username: string, password: string) => {
-    return api.post('/owner/login', new URLSearchParams({username, password}), {
+    return api.post('/admins/login', new URLSearchParams({username, password}), {
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     });
 };

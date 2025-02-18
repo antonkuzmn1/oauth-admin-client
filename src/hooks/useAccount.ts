@@ -21,7 +21,7 @@ export const useAccount = () => {
 
         if (token) {
             try {
-                await api.get('/owner/profile', {
+                await api.get('/admins/profile', {
                     headers: {Authorization: `Bearer ${token}`}
                 });
                 Cookies.set('token', token, {expires: 1});
@@ -45,11 +45,11 @@ export const useAccount = () => {
     }
 
     useEffect(() => {
-        check();
+        check().then();
 
         const intervalId = setInterval(() => {
             console.log('check auth');
-            check();
+            check().then();
         }, 1000 * 60 * 10);
 
         return () => clearInterval(intervalId);

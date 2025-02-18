@@ -3,9 +3,7 @@ import {
     AccountCircle,
     AdminPanelSettings,
     Apartment,
-    Construction,
     Group,
-    Settings
 } from "@mui/icons-material";
 import {useSelector} from "react-redux";
 import {RootState} from "../../utils/store.ts";
@@ -39,18 +37,6 @@ const Navbar = () => {
                     <div className="flex items-center justify-center space-x-2">
                         <AdminPanelSettings sx={{color: 'black'}}/>
                         {deviceSize === 'Large' && <span>Admins</span>}
-                    </div>
-                </Link>
-                <Link to="/owners" className={getLinkClass("/owners")}>
-                    <div className="flex items-center justify-center space-x-2">
-                        <Construction sx={{color: 'black'}}/>
-                        {deviceSize === 'Large' && <span>Owners</span>}
-                    </div>
-                </Link>
-                <Link to="/config" className={getLinkClass("/config")}>
-                    <div className="flex items-center justify-center space-x-2">
-                        <Settings sx={{color: 'black'}}/>
-                        {deviceSize === 'Large' && <span>Config</span>}
                     </div>
                 </Link>
                 <Link to="/me" className={getLinkClass("/me")}>

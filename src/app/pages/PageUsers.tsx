@@ -425,6 +425,7 @@ const PageAdmins: React.FC = () => {
                                     payload: {company_id: Number(e.target.value)}
                                 })}
                             >
+                                <option value={0}>Null</option>
                                 {state.companies.map(company => (
                                     <option key={company.id} value={company.id}>{company.username}</option>
                                 ))}
