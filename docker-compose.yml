@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  react-app:
+    image: antonkuzmn1/oauth-owner-client
+    container_name: oauth-owner-client
+    build: .
+    ports:
+      - "3004:80"
+    restart: always
