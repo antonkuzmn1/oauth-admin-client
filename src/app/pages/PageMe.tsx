@@ -110,7 +110,7 @@ const PageMe: React.FC = () => {
 
     return (
         <>
-            <div className="p-4 flex justify-center">
+            <div className="p-4 flex justify-center pb-20">
                 <div className={'max-w-xl w-full gap-2 flex flex-col'}>
                     <Input
                         label={'ID'}

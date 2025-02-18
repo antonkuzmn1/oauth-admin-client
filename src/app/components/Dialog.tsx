@@ -29,7 +29,7 @@ export const Dialog: React.FC<DialogProps> = ({title, message, children, buttons
                         <Close/>
                     </div>
                 </div>
-                <div className="overflow-y-auto max-h-[calc(100vh-104px)]">
+                <div className="overflow-y-auto max-h-[calc(100vh-300px)]">
                     {message &&
                         <p className={'px-4 pt-4 text-gray-700'}>{message}</p>
                     }
